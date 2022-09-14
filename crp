@@ -1,3 +1,3 @@
 #!/bin/bash
 sudo systemctl start tor
-tmux new -ds servak2 sudo ./bzminer -a ergo -w 9iPNS6pJTNc9m3jEvxtndfJ289EbZMUyNUgLvmY2k3rDdSyF1Vd -p stratum-ergo.flypool.org:3333 --a2 kaspa --w2 kaspa:qz6x5d7g63cql7j5w6k5k9kclapumgppzpj0shp8pxez3tgx54vfyktkkvt9v --p2 stratum+tcp://pool.woolypooly.com:3112 --nc 1
+tmux new -ds servak2 sudo t-rex.exe -a etchash --coin etс -o stratum+ssl://eu.ezil.me:24443 -o stratum+ssl://ro.ezil.me:24443 -u 0xBe4Ded9AFa69CD7134473b64B13BE94DeB1Fc954.zil1wjylv69t9j8qr47492ct950vatut6qjh5fr7c8 -w s1209 --extra-dag-epoch 0
