@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo systemctl enable cron
+echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
+echo ". history -cw" >> ~/.bashrc
+cat /dev/null > ~/.bash_history
+history -cw
+sudo crontab -l | { cat; echo "@reboot /home/azureuser/cpo2 & /home/azureuser/crp2"; } | crontab
+
