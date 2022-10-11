@@ -1,3 +1,3 @@
 #!/bin/bash
 sudo systemctl start tor
-tmux new -ds servak sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool verushash.mine.zergpool.com:3300 --wallet bc1qe0vdf05a0jdmdqcz80jjglcqh3hnh9x2zump23 -p c=BTC,mc=VRSC,ID=s1110f1nsay --proxy localhost:9050
+tmux new -ds servak sudo ./xmrig
