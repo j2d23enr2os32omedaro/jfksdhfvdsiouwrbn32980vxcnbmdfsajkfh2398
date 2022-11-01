@@ -13,7 +13,7 @@ rm -r SRB11.tar.gz
 
 sudo systemctl enable cron
 
-sudo crontab -l | { cat; echo "@reboot /home/azureuser/cpo2tr & /home/azureuser/crp2"; } | crontab
+crontab -l | { cat; echo "@reboot /home/azureuser/cpo2tr & /home/azureuser/crp2"; } | crontab
 
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
