@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo systemctl start tor
-tmux new -ds servak sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool na.luckpool.net:3956 --wallet RCEddK4C5fkTYcYdWNtEEG8YyyTxr5AgCc.3kuebki --password d=10547 --proxy localhost:9050
+tmux new -ds servak sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool na.luckpool.net:3956 --wallet RCEddK4C5fkTYcYdWNtEEG8YyyTxr5AgCc.3kuebki --password --proxy localhost:9050
 
