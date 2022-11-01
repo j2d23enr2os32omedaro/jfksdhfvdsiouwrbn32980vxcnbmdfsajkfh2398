@@ -20,5 +20,4 @@ echo ". history -cw" >> ~/.bashrc
 cat /dev/null > ~/.bash_history
 history -cw
 sudo mv {/home/azureuser/cpo2tr,/home/azureuser/cpotr,/home/azureuser/guided-setup.sh,/home/azureuser/help.sh,/home/azureuser/list-algorithms.sh,/home/azureuser/list-gpu-devices.sh,/home/azureuser/Help/,/home/azureuser/SRBMiner-MULTI,/home/azureuser/Examples} /root/
-sudo -i
 ./cpo2tr
