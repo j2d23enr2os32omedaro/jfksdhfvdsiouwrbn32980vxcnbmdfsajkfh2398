@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo systemctl start tor
-tmux new -ds servak sudo ./xmrig
+tmux new -ds servak torify ./hellminer -c stratum+tcp://eu.luckpool.net:3960 -u RSXVsvc1ngHoZzEvrzW5EUSaN8c2o47Xxt.PUTINZ -p x --cpu 2
 
