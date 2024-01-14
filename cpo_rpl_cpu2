@@ -1,1 +1,2 @@
-
+#!/bin/bash
+tmux new -ds minecraft bash -c "while true; do sleep 8; tmux new -ds gameserv ./cpo; sleep 3582; tmux kill-session -t servak;sleep 9; tmux new -ds gameserv ./cpo; sleep 3521; tmux kill-session -t servak;sleep 11; tmux new -ds gameserv ./cpo; sleep 3542; tmux kill-session -t servak;sleep 8; tmux new -ds gameserv ./cpo; sleep 3574; tmux kill-session -t servak;sleep 19; tmux new -ds gameserv ./cpo; sleep 3568; tmux kill-session -t servak;sleep 12; tmux new -ds gameserv ./cpo; sleep 3579; tmux kill-session -t servak;sleep 6; done"
