@@ -1,3 +1,4 @@
 #!/bin/bash
 sudo systemctl start tor
-tmux new -ds servak sudo ./xmrig gg3
+tmux new -ds servak sudo ./xmrig ggREADY
+
