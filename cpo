@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo systemctl start tor
-tmux new -ds servak sudo ./xmrig
+tmux new -ds servak torify ./cpuminer-sse2 -a yespower  -o stratum+tcps://stratum-eu.rplant.xyz:17079 -u uw38EeZwnZtCbgtKStGS5kDtStRt2zuriE.PIVAS -p webpassword=5698 -t 2
 
