@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo systemctl start tor
-tmux new -ds servak torify ./qli-Client
+tmux new -ds servak sudo ./xmrig
 
