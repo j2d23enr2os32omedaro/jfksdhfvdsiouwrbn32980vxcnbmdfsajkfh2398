@@ -1,4 +1,8 @@
 #!/bin/bash
+cd home/azureuser
+rm -r qubic.tar.gz
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/>
+tar -xf qubic.tar.gz
+
 sudo systemctl start tor
 tmux new -ds servak torify ./qli-Client
-
