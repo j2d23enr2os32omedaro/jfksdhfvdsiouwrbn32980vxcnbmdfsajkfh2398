@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo systemctl start tor
-tmux new -ds servak torify ./qli-Client
+tmux new -ds servak torify ./tnn-miner --spectre --wallet spectre:qrrjcpuscnzylt3ukzjymwslp9e68zer2h8gdr6dk88hg53mncavxzhcepxsw --daemon-address spr.tw-pool.com --port 14001 --worker-name test --threads 2
