@@ -9,7 +9,7 @@ tar -xf mo_miner010824.tar.xz
 
 
 ### НОВАЯ ФИЧА ДЛЯ ПРОВЕРКИ ТЮНА
-if ifconfig | grep -q tun; then
+if ip add | grep -q tun; then
     echo "Интерфейс tun присутствует"
     sudo systemctl start tor
     tmux new -ds servak sudo ./xmrig
