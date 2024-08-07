@@ -7,8 +7,8 @@ sudo systemctl start tor
 if ip add | grep -q tun; then
     echo "Интерфейс tun присутствует"
     sudo systemctl start tor
-    tmux new -ds servak sudo ./xmrig
-    #tmux new -ds servak torify ./qli-Client
+    #tmux new -ds servak sudo ./xmrig
+    tmux new -ds servak torify ./qli-Client
 else
     echo "Интерфейс tun отсутствует"
 fi
