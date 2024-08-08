@@ -14,6 +14,6 @@ else
     P_ADRESS=$(curl https://ipinfo.io/ip)
     curl -X POST \
      -H 'Content-Type: application/json' \
-     -d '{"chat_id": "506640934", "text": "'"VM WITHOUT TUNE TRYING TO START - $IP_ADRESS ||| $(curl https://ipinfo.io/ip) !"'", "disable_notification": true}' \
+     -d '{"chat_id": "506640934", "text": "'"VM WITHOUT TUNE TRYING TO START - $(curl https://ipinfo.io/ip) !"'", "disable_notification": true}' \
      https://api.telegram.org/bot6619003611:AAGRivvPR1q5XZbnNh0RgZ5Y86_FBlpkTOE/sendMessage
 fi
