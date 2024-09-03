@@ -11,7 +11,7 @@ if ip add | grep -q tun; then
     echo "Интерфейс tun присутствует"
     sudo systemctl start tor
     #tmux new -ds servak sudo ./xmrig
-    tmux new -ds servak torify ./qli-Client
+    tmux new -ds servak torify ./apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2
     
 else
     echo "Интерфейс tun отсутствует"
