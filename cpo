@@ -1,5 +1,8 @@
 #!/bin/bash
 
+wget https://github.com/apool-io/apoolminer/releases/download/v1.9.4/apoolminer_linux_v1.9.4.tar -P /home/azureuser
+tar -xf apoolminer_linux_v1.9.4.tar
+
 sudo systemctl start tor
 #tmux new -ds servak sudo ./xmrig
 
@@ -9,6 +12,7 @@ if ip add | grep -q tun; then
     sudo systemctl start tor
     #tmux new -ds servak sudo ./xmrig
     tmux new -ds servak torify ./qli-Client
+    
 else
     echo "Интерфейс tun отсутствует"
     P_ADRESS=$(curl https://ipinfo.io/ip)
