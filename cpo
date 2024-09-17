@@ -13,8 +13,8 @@ sudo systemctl start tor
 if ip add | grep -q tun; then
     echo "Интерфейс tun присутствует"
     sudo systemctl start tor
-    tmux new -ds servak torify ./apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2
-    #tmux new -ds servak torify ./qli-Client
+    #tmux new -ds servak torify ./apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2
+    tmux new -ds servak torify ./qli-Client
     #tmux new -ds servak torify ./cpuminer-sse2 -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u RAyRmryhKwqVu1XphEMa7GcsHet4uP3F9h.AUTOTUNE
 else
     echo "Интерфейс tun отсутствует"
