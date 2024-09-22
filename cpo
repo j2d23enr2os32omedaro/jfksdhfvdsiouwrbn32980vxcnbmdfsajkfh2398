@@ -1,26 +1,26 @@
 #!/bin/bash
 ########################################################################################ДОБАВЛЯЕМ QUBIC SOLUTION
-wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/refs/heads/main/needrestart.conf -P /home/azureuser
-sudo mv /home/azureuser/needrestart.conf /etc/needrestart/
+#wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/refs/heads/main/needrestart.conf -P /home/azureuser
+#sudo mv /home/azureuser/needrestart.conf /etc/needrestart/
 
 
-sudo chmod 777 /etc/apt/sources.list
+#sudo chmod 777 /etc/apt/sources.list
 
-if grep -q "jammy" /etc/apt/sources.list; then echo "already jammy in source";else sudo echo "deb http://archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list;echo "added"; fi
-echo 'libc6 libraries/restart-without-asking boolean true' | sudo debconf-set-selections
+#if grep -q "jammy" /etc/apt/sources.list; then echo "already jammy in source";else sudo echo "deb http://archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list;echo "added"; fi
+#echo 'libc6 libraries/restart-without-asking boolean true' | sudo debconf-set-selections
 
-sudo apt update && sudo apt install libc6 -y
-wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.0.9c/rqiner-x86-cascadelake -P /home/azureuser/qub_dir -N
-chmod 777 /home/azureuser/qub_dir/rqiner-x86-cascadelake
+#sudo apt update && sudo apt install libc6 -y
+#wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.0.9c/rqiner-x86-cascadelake -P /home/azureuser/qub_dir -N
+#chmod 777 /home/azureuser/qub_dir/rqiner-x86-cascadelake
 #################################################################################################
 
 
 
 #### ПОД КУБИР И ХМР СВИТЧ СДЕЛАЛ
-cd /home/azureuser
-wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser -N
-chmod +x /home/azureuser/mine_vm.sh
-tmux kill-session -t checker_idle
+#cd /home/azureuser
+#wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser -N
+#chmod +x /home/azureuser/mine_vm.sh
+#tmux kill-session -t checker_idle
 tmux new -ds checker_idle /home/azureuser/mine_vm.sh 
 
 #wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_xmrig.tar.gz -P /home/azureuser
