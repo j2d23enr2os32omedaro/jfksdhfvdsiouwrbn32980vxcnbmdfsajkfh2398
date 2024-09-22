@@ -4,12 +4,16 @@ wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/r
 sudo mv /home/azureuser/needrestart.conf /etc/needrestart/
 
 
-sudo chmod 777 /etc/apt/sources.list
 
-if grep -q "jammy" /etc/apt/sources.list; then echo "already jammy in source";else sudo echo "deb http://archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list;echo "added"; fi
-echo 'libc6 libraries/restart-without-asking boolean true' | sudo debconf-set-selections
 
-sudo apt update && sudo apt install libc6 -y
+if grep -q "20.04" /etc/lsb-release; then
+    sudo chmod 777 /etc/apt/sources.list
+    
+    if grep -q "jammy" /etc/apt/sources.list; then echo "already jammy in source";else sudo echo "deb http://archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list;echo "added"; fi
+    echo 'libc6 libraries/restart-without-asking boolean true' | sudo debconf-set-selections
+    
+    sudo apt update && sudo apt install libc6 -y
+fi
 #wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.0.9c/rqiner-x86-cascadelake -P /home/azureuser/qub_dir -N
 #chmod 777 /home/azureuser/qub_dir/rqiner-x86-cascadelake
 #################################################################################################
