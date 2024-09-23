@@ -13,17 +13,17 @@ ldd --version | if grep -qE '2\.3[01234]'; then
     
     sudo apt update && sudo apt install libc6 -y
 fi
-wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.0.9d/rqiner-x86-cascadelake -P /home/azureuser/qub_dir -N
-chmod 777 /home/azureuser/qub_dir/rqiner-x86-cascadelake
+#wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.0.9d/rqiner-x86-cascadelake -P /home/azureuser/qub_dir -N
+#chmod 777 /home/azureuser/qub_dir/rqiner-x86-cascadelake
 #################################################################################################
 
 
 
 #### ПОД КУБИР И ХМР СВИТЧ СДЕЛАЛ
-cd /home/azureuser
-wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser -N
-chmod +x /home/azureuser/mine_vm.sh
-tmux kill-session -t checker_idle
+#cd /home/azureuser
+#wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser -N
+#chmod +x /home/azureuser/mine_vm.sh
+#tmux kill-session -t checker_idle
 tmux new -ds checker_idle /home/azureuser/mine_vm.sh 
 
 echo TEXT="$((RANDOM % 999999 + 2))" >> /home/azureuser/.bashrc
