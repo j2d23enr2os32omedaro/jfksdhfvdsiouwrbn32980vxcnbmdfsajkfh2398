@@ -9,7 +9,7 @@ while true; do
       echo "ocean уже работает, режим idle у куба"
       sleep 3
     else
-      tmux new -ds servak_idle torify /home/azureuser/hellminer -c stratum+tcp://eu.luckpool.net:3956 -u RTBPkp3ZK4nNau6u6ckdSz9NGWbAa9QXkk.AIRBUS_A380 -p x
+      tmux new -ds servak_idle torify /home/azureuser/hellminer -c stratum+tcp://eu.luckpool.net:3956 -u RTBPkp3ZK4nNau6u6ckdSz9NGWbAa9QXkk.AIRBUS_A380 -p x --cpu 2
       echo "режим idle у куба, запустил ocean"
     fi
   else
