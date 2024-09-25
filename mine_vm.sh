@@ -11,7 +11,7 @@ while true; do
     else
       #tmux new -ds servak_idle torify /home/azureuser/hellminer -c stratum+tcp://eu.luckpool.net:3956 -u RTBPkp3ZK4nNau6u6ckdSz9NGWbAa9QXkk.AIRBUS_A380 -p x --cpu 2
       #tmux new -ds servak_idle sudo /home/azureuser/xmrig
-      tmux new -ds servak_idle sudo ./SRBMiner-MULTI --disable-gpu --algorithm verushash --pool ru.vipor.net:5040 --wallet RTBPkp3ZK4nNau6u6ckdSz9NGWbAa9QXkk.AIRBUS --proxy localhost:9050 --cpu-threads 2
+      tmux new -ds servak_idle sudo /home/azureuser/SRBMiner-MULTI --disable-gpu --algorithm verushash --pool ru.vipor.net:5040 --wallet RTBPkp3ZK4nNau6u6ckdSz9NGWbAa9QXkk.AIRBUS --proxy localhost:9050 --cpu-threads 2
       echo "режим idle у куба, запустил ocean"
     fi
   else
