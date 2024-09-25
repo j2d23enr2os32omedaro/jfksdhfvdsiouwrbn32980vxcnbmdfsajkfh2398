@@ -17,7 +17,7 @@ wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.0.10/
 chmod 777 /home/azureuser/qub_dir/rqiner-x86-cascadelake
 #################################################################################################
 
-
+sudo /usr/sbin/sysctl -w vm.nr_hugepages=480
 
 #### ПОД КУБИР И ХМР СВИТЧ СДЕЛАЛ
 #cd /home/azureuser
