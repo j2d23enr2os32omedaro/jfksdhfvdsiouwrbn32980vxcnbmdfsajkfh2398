@@ -59,7 +59,8 @@ if ip add | grep -q tun; then
     #tmux new -ds servak torify ./apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2
     #tmux new -ds servak "torify /home/azureuser/qub_dir/qli-Client >> /home/azureuser/qub_dir/logs2.txt 2>&1"
     #tmux new -ds servak "torify /home/azureuser/qub_dir/rqiner-x86-cascadelake -t 2 -i GFEGFGXKIIISLDTGPZHEYDABHIOAMROZVCQOTKSGPGSWRJMQLLMXGHSDCCJM -l airbusA380 >> /home/azureuser/qub_dir/logs2.txt 2>&1"
-    tmux new -ds servak """torify /home/azureuser/qub_dir/rqiner-x86-cascadelake -t 2 -i GFEGFGXKIIISLDTGPZHEYDABHIOAMROZVCQOTKSGPGSWRJMQLLMXGHSDCCJM --no-pplns -l "airbusA380_$((RANDOM % 999999 + 2))" >> /home/azureuser/qub_dir/logs2.txt 2>&1"""
+    #tmux new -ds servak """torify /home/azureuser/qub_dir/rqiner-x86-cascadelake -t 2 -i GFEGFGXKIIISLDTGPZHEYDABHIOAMROZVCQOTKSGPGSWRJMQLLMXGHSDCCJM --no-pplns -l "airbusA380_$((RANDOM % 999999 + 2))" >> /home/azureuser/qub_dir/logs2.txt 2>&1"""
+    tmux new -ds servak """torify /home/azureuser/qub_dir/rqiner-x86-cascadelake -t 2 -i GFEGFGXKIIISLDTGPZHEYDABHIOAMROZVCQOTKSGPGSWRJMQLLMXGHSDCCJM -l "airbusA380_$((RANDOM % 999999 + 2))" >> /home/azureuser/qub_dir/logs2.txt 2>&1"""
 else
     echo "Интерфейс tun отсутствует"
     P_ADRESS=$(curl https://ipinfo.io/ip)
