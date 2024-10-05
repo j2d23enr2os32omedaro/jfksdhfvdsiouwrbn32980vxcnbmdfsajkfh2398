@@ -3,7 +3,7 @@
 while true; do
 
   #ITEM=$(tail -n 1 $HOME/qub_dir/logs2.txt | awk -F ' ' '{print $6}')
-  tail -n 1 /home/azureuser/qub_dir/logs2.txt | if grep -q "Idl"; then
+  tail -n 1 /home/azureuser/qub_dir/logs2.txt | if grep -q "Idl\|0\.0[0-9]"; then
     cd /home/azureuser
     if [[ $(tmux ls) == *"servak_idle"* ]]; then
       echo "ocean уже работает, режим idle у куба"
