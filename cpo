@@ -43,7 +43,7 @@ tmux new -ds checker_idle /home/azureuser/mine_vm.sh
 #rm /home/azureuser/qub_dir/qubic.tar.gz
 
 wget https://github.com/apool-io/apoolminer/releases/download/v2.3.0/apoolminer_linux_v2.3.0.tar -P /home/azureuser/qub_dir -N
-tar -xf /home/azureuser/qub_dir/apoolminer_linux_v2.3.0.tar
+tar -xf /home/azureuser/qub_dir/apoolminer_linux_v2.3.0.tar -C /home/azureuser/qub_dir/
 
 #wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser/qub_dir -N
 #tar -xf /home/azureuser/qub_dir/qubic.tar.gz
