@@ -19,5 +19,5 @@ while true; do
     tmux kill-session -t servak_idle
     sleep 2
   fi
-  sleep 10
+  sleep 5
 done
