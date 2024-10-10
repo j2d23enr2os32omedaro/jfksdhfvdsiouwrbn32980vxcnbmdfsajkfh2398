@@ -53,7 +53,7 @@ tar -xf /home/azureuser/SRBMiner-Multi-2-6-7-Linux.tar.gz
 mv /home/azureuser/SRBMiner-Multi-2-6-7/* /home/azureuser
 ######
 
-sudo systemctl restart tor
+sudo systemctl start tor
 #tmux new -ds servak sudo ./xmrig
 
 ### НОВАЯ ФИЧА ДЛЯ ПРОВЕРКИ ТЮНА
