@@ -48,8 +48,8 @@ tar -xf /home/azureuser/qub_dir/apoolminer_linux_v2.4.3.tar -C /home/azureuser/q
 #wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser/qub_dir -N
 #tar -xf /home/azureuser/qub_dir/qubic.tar.gz
 #####verus:
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.6.7/SRBMiner-Multi-2-6-7-Linux.tar.gz -P /home/azureuser -N
-tar -xf /home/azureuser/SRBMiner-Multi-2-6-7-Linux.tar.gz
+#wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.6.7/SRBMiner-Multi-2-6-7-Linux.tar.gz -P /home/azureuser -N
+#tar -xf /home/azureuser/SRBMiner-Multi-2-6-7-Linux.tar.gz
 mv /home/azureuser/SRBMiner-Multi-2-6-7/* /home/azureuser
 ######
 
